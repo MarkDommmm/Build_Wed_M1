@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Bin-It">
+
+
+    <title>HH WATCH 69 | Quản Lý Bán Hàng</title>
+
+    <link rel="shortcut icon" href="/img/logo/favicon HH.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Latest compiled and minified CSS -->
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.css">
+    <!--===============================================================================================-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.js"></script>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"></i> HH WATCHES 69 ADMIN</a>
+            </div>
+            <div>
+                <img src="" alt="">
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="/ADMIN/Admin/custommer.html">Quản lý sản phẩm</a></li>
+                    <li><a href="/ADMIN/QL_DonHang/user.html">Quản lý đơn hàng</a> </li>
+                    <li><a href="/ADMIN/QL_users/index.html">Quản lý users</a></li>
+                    <li><a href="/ADMIN/Bao-Cao/baocao.html">BÁO CÁO</a></li>
+
+                    <li>
+                        <a href="#"><b>Tài Khoản</b>
+                        </a>
+                        <ul class="dropdown">
+                            <li><a href="/Thanks/index.html"><b>Đăng xuất <i
+                                            class="fa-solid fa-arrow-right-from-bracket"></i></b></a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="container-table" class="container-fluid al">
+        <h1 class="text_heading">Quản lý Đơn Hàng</h1>
+        <Br>
+        <p class="white"><b>TÌM KIẾM Đơn hàng:</b></p><Br><Br>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Nhập tên đơn hàng cần tìm...">
+        <i class="fa fa-search" aria-hidden="true"></i>
+    </div>
+    <div class="test">
+        <table class="table table-bordered" id="myTable">
+            <thead>
+                <tr class="test_tr">
+                    <th>ID # đơn hàng</th>
+                    <th>Thông tin ship hàng</th>
+                    <th>Số lượng</th>
+                    <th>Thông tin sản phẩm</th>
+                    <th>Trạng thái đơn hàng</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="test_detail">
+                <table class="table table-bordered" id="myTable">
+                    <thead>
+                        <tr class="test_tr">
+                            <th>ID # sản phẩm</th>
+                            <th>Hình ảnh sản phẩm</th>
+                            <th>Thông tin sản phẩm</th>
+                            <th>Số lượng</th>
+                            
+
+                        </tr>
+                    </thead>
+                    <tbody id="tbody_detail">
+
+                        <!-- <tr>
+                    <td class="text_center">1</td>
+
+                    <td class="text_center">hublot-classic-fusion-automatic-king-gold</td>
+                    <td id="img_table"><img width="100px"
+                            src="/img/Hublot/hublot-classic-fusion-automatic-king-gold-300x300.png" alt=""></td>
+                    <td class="text_center">1.000.000.000</td>
+                    <td class="text_center">HUBLOT</td>
+                    <td>
+                        <select name="status" id="status" placeholder="Tình trạng đơn hàng">
+                            <option value="Đang xử lý">Đang xử lý</option>
+                            <option value="Đang ship hàng">Đang ship hàng</option>
+                            <option value="Đã xong">Đã xong</option>
+                        </select>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </td>
+
+                </tr> -->
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_2">
+        <div>
+            <img src="/img/logo/H-removebg-preview (1).png" alt="">
+        </div>
+        <div class="product">
+            <h3>HH WATCH 69 OFFICER</h3>
+            <p>Tòa Nhà Sông Đà</p>
+            <p>☏Hotline : 0944448286</p>
+            <p>HH WATCH 69 CHUYÊN CUNG CẤP – PHÂN PHỐI CÁC DÒNG ĐIỆN THOẠI VERTU, TRANG SỨC & ĐỒNG HỒ CHÍNH HÃNG NHẬP
+                KHẨU TỪ CHÂU ÂU</p>
+            <p>email : hieu1999@gmail.com</p>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div>
+            <h3>SẢN PHẨM</h3>
+            <p>- - Rolex</p>
+            <p>- - Hublot</p>
+            <p>- - Franck Muller</p>
+            <p>- - Patek Philippe</p>
+        </div>
+        <div>
+            <h3>DỊCH VỤ</h3>
+            <p>Thu Mua</p>
+            <p>Ký Gửi</p>
+            <p>Cá nhân hóa đồng hồ</p>
+            <h3>ĐIỀU KHOẢN</h3>
+            <p>Điều khoản sử dụng</p>
+            <p>Chính sách thanh toán</p>
+        </div>
+        <div>
+            <h3>ĐIỀU KHOẢN</h3>
+            <p>Chính sách thanh toán</p>
+            <p>Điều khoản sử dụng</p>
+        </div>
+    </div>
+    </div>
+    <script src="./user.js"></script>
+
+</body>
+
+</html>
